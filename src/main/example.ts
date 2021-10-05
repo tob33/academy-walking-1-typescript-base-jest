@@ -3,3 +3,4 @@ export class Example {
         return a + b;
     }
 }
+// hello
