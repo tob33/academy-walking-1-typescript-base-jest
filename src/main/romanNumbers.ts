@@ -28,5 +28,10 @@ export function printRomanNumber(num:number):string{
         } 
     }
 
+    if (num >= 14 && num <= 19){
+        outputString += "X";
+        outputString += printRomanNumber(num-10);
+    }
+
     return outputString
 }

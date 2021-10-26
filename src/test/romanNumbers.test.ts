@@ -16,6 +16,12 @@ describe('romanNumbers',()=>{
         [12,"XII"],
         [13,"XIII"],
         [14,"XIV"],
+        [15,"XV"],
+        [16,"XVI"],
+        [17,"XVII"],
+        [18,"XVIII"],
+        [19,"XIX"],
+        [20,"XX"],
     ])('given number %i should output a roman number %s',(value:number, expected:string)=>{
         expect(printRomanNumber(value)).toBe(expected)
     })
