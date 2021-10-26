@@ -6,6 +6,7 @@ describe('romanNumbers',()=>{
         [2,"II"],
         [3,"III"],
         [4,"IV"],
+        [5,"V"],
     ])('given number %i should output a roman number %s',(value:number, expected:string)=>{
         expect(printRomanNumber(value)).toBe(expected)
     })
