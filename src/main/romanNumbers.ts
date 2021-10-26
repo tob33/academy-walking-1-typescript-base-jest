@@ -9,5 +9,13 @@ export function printRomanNumber(num:number):string{
     if (num ===4) {
             outputString = "IV"
         }
+
+    if (num > 4 && num <= 8) {
+        outputString += "V";
+        for (let index = 5; index < num; index++) {
+            outputString += "I"
+        }
+    }
+
     return outputString
 }
