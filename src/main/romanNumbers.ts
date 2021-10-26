@@ -17,18 +17,18 @@ export function printRomanNumber(num:number):string{
         }
     }
 
-    if(num>=9 && num <=13){
-        outputString += "X";
-        if(num===9){
-            outputString="IX"
-        }else{
-            for (let index = 11; index <= num; index++) {
-                outputString += "I"
-            }
-        } 
-    }
+    // if(num>=9 && num <=13){
+    //     outputString += "X";
+    //     if(num===9){
+    //         outputString="IX"
+    //     }else{
+    //         for (let index = 11; index <= num; index++) {
+    //             outputString += "I"
+    //         }
+    //     } 
+    // }
 
-    if (num >= 14 && num <= 19){
+    if (num >= 9 && num <= 19){
         outputString += "X";
         outputString += printRomanNumber(num-10);
     }
