@@ -1,5 +1,10 @@
 
 export function printRomanNumber(num:number):string{
-        if (num > 1) return 'II';
-        return 'I'
+    let outputString:string = ""
+    if(num>0){
+        for (let index = 1; index <= num; index++) {
+            outputString += "I"
+        }
     }
+    return outputString
+}
