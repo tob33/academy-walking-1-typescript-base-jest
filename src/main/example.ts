@@ -23,10 +23,11 @@ export class BankAccount implements AccountService {
     };
 
     withdraw(amount: number): void{
-
+        this.balance = this.balance - amount;
+        this.amount = amount;
     };
     printStatement() : void{
-        const statementLine = "10/01/2012" + " || " + this.amount + " || " + this.balance;
-        this.printer.print(["Date || Amount || Balance", statementLine])
+        this.printer.print(["Date || Amount || Balance"]);
+        if (this.balance = 0) {const statementLine = "10/01/2012" + " || " + this.amount + " || " + this.balance};
     };
 }
